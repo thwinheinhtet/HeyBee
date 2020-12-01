@@ -1,0 +1,105 @@
+﻿.btn-custom {
+    color: #fff;
+    background-color: #F95B3D;
+    border-color: #F95B3D;
+    font-size: 12px;
+}
+
+    .btn-custom:hover {
+        /*color: #fff;*/
+        /*background-color: #0069d9;*/
+        /*border-color: #0062cc;*/
+        background-color: #ff6a00;
+        border-color: #ff6a00;
+        /*color: #000;*/
+    }
+
+    .btn-custom:focus, .btn-custom.focus {
+        /*color: #fff;
+		background-color: #0069d9;
+		border-color: #0062cc;*/
+        background-color: #ff6a00;
+        border-color: #ff6a00;
+        /*box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);*/
+    }
+
+    .btn-custom.disabled, .btn-custom:disabled {
+        /*color: #fff;*/
+        background-color: #808B96;
+        border-color: #808B96;
+    }
+
+    .btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+    .show > .btn-custom.dropdown-toggle {
+        /*color: #fff;
+		background-color: #0062cc;
+		border-color: #005cbf;*/
+        background-color: #ff6a00;
+        border-color: #ff6a00;
+    }
+
+        .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+        .show > .btn-custom.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+        }
+
+
+
+.btn-cancel {
+    color: #fff;
+    background-color: #101010;
+    border-color: #101010;
+    font-size: 12px;
+}
+
+    .btn-cancel:hover {
+        /*color: #fff;*/
+        /*background-color: #0069d9;*/
+        /*border-color: #0062cc;*/
+        background-color: #808B96;
+        border-color: #808B96;
+        /*color: #000;*/
+    }
+
+    .btn-cancel:focus, .btn-cancel.focus {
+        /*color: #fff;
+		background-color: #0069d9;
+		border-color: #0062cc;*/
+        background-color: #808B96;
+        border-color: #808B96;
+        /*box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);*/
+    }
+
+    .btn-cancel.disabled, .btn-cancel:disabled {
+        /*color: #fff;*/
+        background-color: #808B96;
+        border-color: #808B96;
+    }
+
+    .btn-cancel:not(:disabled):not(.disabled):active, .btn-cancel:not(:disabled):not(.disabled).active,
+    .show > .btn-cancel.dropdown-toggle {
+        /*color: #fff;
+		background-color: #0062cc;
+		border-color: #005cbf;*/
+        background-color: #808B96;
+        border-color: #808B96;
+    }
+
+        .btn-cancel:not(:disabled):not(.disabled):active:focus, .btn-cancel:not(:disabled):not(.disabled).active:focus,
+        .show > .btn-cancel.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+        }
+
+
+
+
+.userrow {
+    padding: 0.25rem !important;
+    /*color: #000;*/
+    background-color: #F95B3D;
+    /*background-color: #6332a1;*/
+}
+
+.custom-text {
+    font-size: 14px;
+}

@@ -1,0 +1,60 @@
+﻿@model WeeklyPlanner.Controllers.DisplayViewModel
+
+@{ }
+    <link rel="stylesheet" href="~/css/UserRole.css" />
+<div class="pt-lg-3">
+
+    @*<partial name="_createrole" model="new WeeklyPlanner.Controllers.RoleViewModel()">*@
+
+     
+
+        @*<div>
+                <h5>Role List</h5>
+                <ul>
+                    @foreach (var role in Model.Roles)
+                    {
+                        <li>
+                            @role
+                        </li>
+                    }
+                </ul>
+            </div>*@
+
+
+
+</div>
+@*<div class="table table-responsive">
+    <table class="col-xl-10">
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td>
+                        @user.Email
+                    </td>
+                    <td>
+                        <ul>
+                            @foreach (var role in user.Roles)
+                            {
+                                <li>
+                                    @role.Name
+                                </li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+
+
+            }
+        </tbody>
+    </table>
+    </div>*@
+<div>
+    <partial name="_AddUserToRole" model="new WeeklyPlanner.Controllers.UpdateUserRoleViewModel() { Users = Model.Users, Roles = Model.Roles }">
+</div>

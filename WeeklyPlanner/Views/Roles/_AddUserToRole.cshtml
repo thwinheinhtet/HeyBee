@@ -1,0 +1,47 @@
+﻿@model WeeklyPlanner.Controllers.UpdateUserRoleViewModel
+
+
+<div>
+
+    <form asp-controller="Roles" asp-action="UpdateUserRole" method="post">
+        <div class="action">
+            <div class="userleft">
+                <h6>User List</h6>
+                <div class="userscroll p-3">
+
+                    @foreach (var user in Model.Users)
+                    {
+                        <div class="pb-3">
+                            <input type="radio" asp-for="UserEmail" value="@user.Email" />
+                            <lable formaction="UserEmail"> @user.Email </lable><br />
+                        </div>
+
+                    }
+                </div>
+            </div>
+
+            <div class="roleright">
+                <h6>Role List</h6>
+                <div class="rolescroll p-3">
+
+                    @foreach (var role in Model.Roles)
+                    {
+                        //name value must be same list value
+                        <div class="pb-3">
+                            <input type="checkbox" name="Role" value="@role" />
+                            <label for="Role">@role</label>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <input class="btn btn-custom" type="submit" value="Attach Role" />
+            <input type="hidden" asp-for="Delete" value="false" id="delete" />
+            <input class="btn btn-cancel" type="submit" value="Remove Role" onclick="document.getElementById('delete').value = 'true'" />
+        </div>
+
+    </form>
+
+</div>

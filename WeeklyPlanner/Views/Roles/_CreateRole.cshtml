@@ -1,0 +1,15 @@
+﻿@model WeeklyPlanner.Controllers.RoleViewModel
+
+@{ }
+<br />
+<h4>Creat a new role</h4>
+<br />
+<div>
+    <form asp-controller="Roles" asp-action="CreateRole" method="post">
+        <label>Enter Role Name </label>
+        <input asp-for="Name" />
+        <input type="submit" value="CreateRole" />
+    </form>
+
+</div>
+<br />

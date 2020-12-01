@@ -1,0 +1,52 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+    Layout = "/Views/Shared/_LoginLayout.cshtml";
+
+}
+
+<div class="row no-gutter">
+    <div class="col-md-6">
+        <div class="login d-flex align-items-center py-5">
+            <img src="~/images/WPlannerLogo.jpg" class="img-responsive center-block d-block mx-auto" alt="Sample Image">
+        </div>
+    </div>
+    <div class="col-md-6 bg-color">
+        <div class="login d-flex align-items-center py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-8 mx-auto">
+                        <form id="account" method="post" class="bg-white p-lg-5">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="Input.Email"></label>
+                                <input asp-for="Input.Email" class="form-control" />
+                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Input.Password"></label>
+                                <input asp-for="Input.Password" class="form-control" />
+                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-login">Log in</button>
+                            </div>
+                            @*<div class="form-group">
+                                <p>
+                                    <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                                </p>
+                            </div>*@
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

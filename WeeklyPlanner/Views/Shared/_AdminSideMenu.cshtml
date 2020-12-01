@@ -1,0 +1,19 @@
+﻿<div class="list-group list-group-flush">
+    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">Dashboard</a>
+    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">Admin</a>
+    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">Overview</a>
+    <div class="list-group-item list-group-flush bg-light">
+        <a class="dropdown-toggle bg-light text-dark" href="" data-toggle="dropdown">User Management <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li role="presentation"><a asp-area="" asp-controller="Home" asp-action="UserCreation" class="list-group-item list-group-item-action bg-light">User Creation</a></li>
+            <li role="presentation"><a asp-area="" asp-controller="Home" asp-action="RoleAttachment" class="list-group-item list-group-item-action bg-light">Role Attachement</a></li>
+        </ul>
+    </div>
+    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+
+        <form id="logoutForm" class="m-0 p-0" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button id="logout" type="submit" class="btn btn-somethings m-0 p-0"> Logout </button>
+        </form>
+    </a>
+
+    </div>

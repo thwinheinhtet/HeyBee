@@ -1,0 +1,36 @@
+﻿@model WeeklyPlanner.Controllers.UserController.UsersViewModel
+
+<div class="pt-2 text-right pb-2">
+    <a class="btn btn-custom" id="register" role="button" asp-area="Identity" asp-page="/Account/Register">Create User</a>
+</div>
+
+<div class="table table-responsive">
+    <table class="col-xl-12">
+        <thead class="userrow">
+            <tr>
+                <th>Email</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in ViewBag.Users)
+            {
+                <tr>
+                    <td>
+                        @user.Email
+                    </td>
+                    <td>
+                        <ul>
+                            @foreach (var role in user.Roles)
+                            {
+                                <li>
+                                    @role.Name
+                                </li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

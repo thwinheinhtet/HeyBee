@@ -1,0 +1,52 @@
+﻿.role-claim-ul li {
+    list-style: none;
+    font-size: 12px;
+}
+
+body {
+    /*background: #FEF9E7;*/
+}
+
+
+/*.user-create-btn {
+    background-color: #6c757d;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+}*/
+
+/*.user-create-btn:hover {
+       color: white;
+        
+    }*/
+.userscroll {
+    border: 2px solid #ccc;
+    width: 400px;
+    height: 225px;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+
+.userleft {
+    float: left;
+    /*margin-left: 50px;*/
+}
+
+.roleright {
+    float: right;
+    margin-right: 100px;
+}
+
+.rolescroll {
+    border: 2px solid #ccc;
+    width: 400px;
+    height: 225px;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+
+.action {
+    display: block;
+    width: 100%;
+    height: 300px;
+}

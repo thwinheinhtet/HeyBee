@@ -1,0 +1,20 @@
+﻿.login,
+.image {
+    min-height: 100vh
+}
+
+.bg-image {
+    background-image: url('https://res.cloudinary.com/dxfq3iotg/image/upload/v1561631318/img-123.jpg');
+    background-size: cover;
+    background-position: center center
+}
+
+.bg-color {
+    background-color: #DE6237;
+}
+
+.btn-login {
+    color: #fff;
+    background-color: #DE6237;
+    border-color: #DE6237;
+}
